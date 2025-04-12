@@ -823,3 +823,41 @@ ul.social_icon li a:hover {
 
 /** end footer **/
 
+/* Card Styles */
+.service_card {
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2); /* Light red shadow */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff; /* White background for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service_card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.service_card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #272f43; /* Darker text for readability */
+    margin-bottom: 10px;
+}
+
+.service_card p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.service_card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.service_card:hover h4 {
+    color: #ff0000; /* Change text color on hover */
+}
+
+
