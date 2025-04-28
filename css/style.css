@@ -330,8 +330,14 @@ button {
      line-height: 40px;
 }
 
+.head_top .container-fluid {
+    margin-bottom: 0; /* Remove bottom margin */
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
 .banner_main {
-     padding: 90px 0 190px 0;
+    margin-top: 0; /* Remove top margin */
+    padding-top: 0; /* Remove top padding */
 }
 
 .text-bg {
@@ -385,7 +391,10 @@ button {
 }
 
 .text-img figure img {
-     width: 100%;
+    max-height: 500px; /* Increase the maximum height of the image */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image scales properly */
+    margin: 0 auto; /* Center the image */
 }
 
 .titlepage {
