@@ -958,6 +958,7 @@ social_icon li a {
     color: #ff0000; /* Change text color on hover */
 }
 
+
 /* Mobile View: Change colors for Testimonial and Main Banner sections */
 @media (max-width: 768px) {
     /* Main Banner Section */
