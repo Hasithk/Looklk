@@ -793,6 +793,8 @@ ul.social_icon li a:hover {
      background: #ff0000;
      margin-top: 50px;
      position: relative;
+     margin-top: 0; /* Remove top margin */
+     padding-top: 0; /* Remove top padding */
 }
 
 .copyright::after {
@@ -820,8 +822,74 @@ ul.social_icon li a:hover {
      color: #23262d;
 }
 
+/* Footer Styles */
+.footer_upper {
+    background: url('../images/footer_bg.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire footer area */
+    position: relative;
+    padding: 40px 0;
+    color: #fff; /* White text */
+}
 
-/** end footer **/
+.footer_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Black overlay with transparency */
+    z-index: 1;
+}
+
+.footer_upper .container {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.footer_section {
+    margin-bottom: 0; /* Remove bottom margin */
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
+.footer_section h4 {
+    color: #fff; /* White heading color */
+    margin-bottom: 20px;
+}
+
+.footer_links li,
+.footer_contact li {
+    margin-bottom: 10px;
+}
+
+.footer_links a {
+    color: #fff; /* White links */
+    text-decoration: none;
+}
+
+.footer_links a:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+.social_icon li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+social_icon li a {
+    color: #fff; /* White social icons */
+    font-size: 20px;
+}
+
+.social_icon li a:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+.copyright {
+    background: #000; /* Solid black background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
 
 /* Card Styles */
 .service_card {
