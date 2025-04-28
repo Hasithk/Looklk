@@ -958,4 +958,37 @@ social_icon li a {
     color: #ff0000; /* Change text color on hover */
 }
 
+/* Mobile View: Change colors for Testimonial and Main Banner sections */
+@media (max-width: 768px) {
+    /* Main Banner Section */
+    .head_top {
+        background: linear-gradient(to bottom, #ff0000, #8b0000) !important; /* Red to dark red gradient */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Testimonial Section */
+    .Testimonial {
+        background: linear-gradient(to bottom, #ff0000, #8b0000) !important; /* Red to dark red gradient */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Adjust text colors for better contrast */
+    .Testimonial .titlepage h2,
+    .Testimonial .titlepage span,
+    .Testimonial_box h4,
+    .Testimonial_box p {
+        color: #fff !important; /* Ensure text is readable on the gradient background */
+    }
+
+    .text-bg h1,
+    .text-bg p,
+    .text-bg .cta-button {
+        color: #fff !important; /* Ensure text is readable on the gradient background */
+    }
+}
+
 
