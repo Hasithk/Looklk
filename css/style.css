@@ -383,18 +383,30 @@ button {
 }
 
 .text-img {
-     padding-top: 100px;
+    perspective: 1000px; /* Add perspective to create a 3D effect */
 }
 
 .text-img figure {
-     margin: 0px;
+    display: inline-block;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for 3D effect */
+}
+
+.text-img figure:hover {
+    transform: rotateY(15deg) rotateX(15deg); /* Rotate the figure on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
 .text-img figure img {
-    max-height: 500px; /* Increase the maximum height of the image */
+    max-height: 500px; /* Maintain the image size */
     width: auto; /* Maintain the aspect ratio */
     object-fit: cover; /* Ensure the image scales properly */
     margin: 0 auto; /* Center the image */
+    transition: transform 0.5s ease; /* Smooth transition for individual elements */
+}
+
+.text-img figure img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .titlepage {
