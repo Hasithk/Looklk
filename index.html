@@ -197,36 +197,6 @@
       </div>
       <!-- end What We Offer (Services) -->
       
-      <!-- Testimonial -->
-      <div class="section">
-         <div class="container">
-            <div id="" class="Testimonial">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>Testimonial</h2>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-3">
-                     <div class="Testimonial_box">
-                        <i><img src="images/plan1.png" alt="#"/></i>
-                     </div>
-                  </div>
-                  <div class="col-md-9">
-                     <div class="Testimonial_box">
-                        <h4>Samantha D., Small Business Owner</h4>
-                        <p>Look International helped us skyrocket our reach and engagement. A+ service!
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-     
-      <!-- end Testimonial -->
       <!-- Contact Section -->
       <div id="contact" class="contact" style="margin-bottom: 50px;"> <!-- Added margin-bottom for spacing -->
          <div class="container">
@@ -242,22 +212,22 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 ">
-                  <form class="main_form ">
+                  <form class="main_form" action="send_email.php" method="POST">
                      <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="form_contril" placeholder="Name " type="text" name="Name ">
+                        <div class="col-md-12">
+                           <input class="form_contril" placeholder="Name" type="text" name="name" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
+                           <input class="form_contril" placeholder="Phone Number" type="text" name="phone" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="form_contril" placeholder="Email" type="text" name="Email">
+                           <input class="form_contril" placeholder="Email" type="email" name="email" required>
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                           <textarea class="textarea" placeholder="Message" name="message" required></textarea>
                         </div>
                         <div class="col-sm-12">
-                           <button class="send_btn">Send</button>
+                           <button class="send_btn" type="submit">Send</button>
                         </div>
                      </div>
                   </form>
