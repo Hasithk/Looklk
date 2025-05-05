@@ -129,10 +129,19 @@ h2 {
 
 /* Middle Section: Package Content */
 .card-body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Ensure even spacing */
     padding: 20px;
+    height: 100%; /* Ensure the card body takes full height */
 }
 
+/* Style the card body to look like a table */
 .card-body ul {
+    flex-grow: 1; /* Allow the list to grow and take up available space */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Distribute items evenly */
     list-style: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
@@ -140,15 +149,19 @@ h2 {
 }
 
 .card-body ul li {
-    margin-bottom: 10px;
+    margin: 10px 0; /* Add equal spacing between items */
     font-weight: bold; /* Bold text */
 }
 
+/* Price Styling */
 .card-body .price {
-    font-size: 24px;
+    font-size: 28px; /* Larger font size for emphasis */
     font-weight: bold;
     color: #ff0000; /* Red for price */
-    margin-top: 20px;
+    margin-top: 20px; /* Add spacing above the price */
+    text-align: center;
+    border-top: 1px solid #ddd; /* Add a separator above the price */
+    padding-top: 10px; /* Add padding above the price */
 }
 
 /* Bottom Section: Call-to-Action Button */
@@ -319,7 +332,7 @@ h2 {
                                <li>1 Ad Campaign (Brand Awareness or Engagement)</li>
                                <li>Basic Performance Report</li>
                            </ul>
-                           <div class="price">$167</div>
+                           <div class="price">$167</div> <!-- Price is part of the middle section -->
                        </div>
                        <!-- Bottom Section: Call-to-Action Button -->
                        <div class="card-footer">
