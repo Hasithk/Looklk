@@ -33,7 +33,7 @@ export default function Navigation({ scrolled }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src="/Look white.png" alt="Look International" className="h-8 sm:h-10" />
+            <img src="/look-white.png" alt="Look International" className="h-8 sm:h-10" />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
