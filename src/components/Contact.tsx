@@ -81,7 +81,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="mailto:lookinternationallk@gmail.com"
+                  href="mailto:contact@lookinternational.lk"
                   className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300"
                 >
                   <div className="flex-shrink-0 w-12 h-12 bg-red-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -89,7 +89,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-400 text-sm mb-1">Email</div>
-                    <div className="text-lg font-semibold break-all">lookinternationallk@gmail.com</div>
+                    <div className="text-lg font-semibold break-all">contact@lookinternational.lk</div>
                   </div>
                 </a>
 
