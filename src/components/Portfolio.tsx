@@ -26,7 +26,7 @@ export default function Portfolio() {
         { label: 'Cost/Result', value: '$0.09' },
         { label: 'Engagement', value: '+245%' },
       ],
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_Biona.jpg',
     },
     {
       id: 2,
@@ -51,14 +51,14 @@ export default function Portfolio() {
         { label: 'Leads', value: '150+' },
         { label: 'ROI', value: '320%' },
       ],
-      image: 'https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_Arrow.jpg',
     },
     {
       id: 5,
       title: 'Green Line Brand Identity',
       category: 'branding',
       description: 'Fresh and modern branding for sustainable transport',
-      image: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_Green Line.jpg',
     },
     {
       id: 6,
@@ -69,10 +69,10 @@ export default function Portfolio() {
     },
     {
       id: 7,
-      title: 'Aprodiate Branding',
+      title: 'Aphrodite Branding',
       category: 'branding',
       description: 'Professional brand development and visual identity',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_Aphrodite.jpg',
     },
     {
       id: 8,
