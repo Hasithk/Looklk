@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
+import Footer from './components/Footer';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,6 +32,7 @@ function App() {
       <Portfolio />
       <Pricing />
       <Contact />
+      <Footer />
       <WhatsAppButton />
     </div>
   );
