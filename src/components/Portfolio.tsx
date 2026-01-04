@@ -33,14 +33,14 @@ export default function Portfolio() {
       title: 'Plant Planet Branding',
       category: 'branding',
       description: 'Complete brand identity and logo design for eco-friendly business',
-      image: 'https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_Plant Planet.jpg',
     },
     {
       id: 3,
       title: 'AI Prompt Gen Website',
       category: 'websites',
       description: 'Modern web application for AI prompt generation',
-      image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_AIPromptgen.jpg',
     },
     {
       id: 4,
@@ -58,14 +58,14 @@ export default function Portfolio() {
       title: 'Green Line Brand Identity',
       category: 'branding',
       description: 'Fresh and modern branding for sustainable transport',
-      image: '/WB_Green Line.jpg',
+      image: '/WB_GreenLine.jpg',
     },
     {
       id: 6,
       title: 'Sinhara Art Suite Website',
       category: 'websites',
       description: 'Elegant portfolio website for art gallery',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3004909/pexels-photo-3004909.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       id: 7,
@@ -79,7 +79,7 @@ export default function Portfolio() {
       title: 'Orex E-Commerce',
       category: 'websites',
       description: 'Full-featured e-commerce platform with payment integration',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_Orex.jpg',
     },
     {
       id: 9,
@@ -90,7 +90,7 @@ export default function Portfolio() {
         { label: 'Sales', value: '+180%' },
         { label: 'Traffic', value: '45K' },
       ],
-      image: 'https://images.pexels.com/photos/264787/pexels-photo-264787.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/WB_London.jpg',
     },
   ];
 
