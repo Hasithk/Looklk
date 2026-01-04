@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { MapPin, Mail, Phone, Send, CheckCircle } from 'lucide-react';
+import { MapPin, Mail, Phone, Send, CheckCircle, Loader2 } from 'lucide-react';
+
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw_40WPM-ZNUfbkp380HA_zYWEcO9ijtBzvqMSdZS6sJPIrhpfHPe041fcqpdXbACaRCg/exec';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,21 +14,41 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: '',
-        company: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: '',
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: '',
+        });
+      }, 3000);
+    } catch {
+      setError('Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -255,11 +277,25 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-red-600/30"
+                    disabled={isSubmitting}
+                    className="w-full bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-red-600/30 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
                   >
-                    Send Message
-                    <Send className="w-5 h-5" />
+                    {isSubmitting ? (
+                      <>
+                        Sending...
+                        <Loader2 className="w-5 h-5 animate-spin" />
+                      </>
+                    ) : (
+                      <>
+                        Send Message
+                        <Send className="w-5 h-5" />
+                      </>
+                    )}
                   </button>
+
+                  {error && (
+                    <p className="text-red-600 text-center text-sm">{error}</p>
+                  )}
                 </form>
               )}
             </div>
