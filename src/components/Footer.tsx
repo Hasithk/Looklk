@@ -6,8 +6,8 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: 'https://facebook.com/lookinternational', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com/lookinternational', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com/company/lookinternational', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/look_international/', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/look-international/', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/lookinternational', label: 'Twitter' },
   ];
 
