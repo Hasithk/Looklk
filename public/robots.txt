@@ -1,0 +1,35 @@
+# Robots.txt for Look International
+# https://lookinternational.lk
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lookinternational.lk/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow all search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Crawl delay for polite crawling
+Crawl-delay: 10
