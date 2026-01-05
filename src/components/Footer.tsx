@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, Github, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,6 +9,7 @@ export default function Footer() {
     { icon: Instagram, href: 'https://www.instagram.com/look_international/', label: 'Instagram' },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/look-international/', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/lookinternational', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/lookinternational', label: 'GitHub' },
   ];
 
   const services = [
